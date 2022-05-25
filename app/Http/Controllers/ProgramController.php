@@ -99,6 +99,7 @@ class ProgramController extends Controller
                 $r->placement = $placements[0];
             }
         }
+        $r->published = $request->input('published');
         $r->published_by = $request->input('published_by');
         $r->created_by = $request->input('created_by');
         $r->save();
